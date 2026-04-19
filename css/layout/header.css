@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    align-items: center;
+    padding: 1.3rem 1.5rem;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+}
+header h2{
+    font-weight: 900;
+}
+header nav{
+    display: flex;
+   
+}
+
+header nav ul{
+    display: flex;
+    gap: 2rem;
+    display: none;
+}
+header nav ul li a{
+    color: white;
+}
+
+@media (min-width: 768px){
+    header nav ul{
+        display: flex;
+    }
+    header nav .fa-solid.fa-bars{
+        display: none;
+    }
+}
