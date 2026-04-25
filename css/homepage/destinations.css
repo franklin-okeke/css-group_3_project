@@ -1,0 +1,134 @@
+/* Destinations Grid Styles */
+.destinations-grid {
+    display: grid;
+    /* This creates the 3-column layout that scales down automatically */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
+}
+
+.dest-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.dest-card:hover {
+    transform: translateY(-10px);
+}
+
+.dest-image {
+    position: relative;
+    height: 250px;
+}
+
+.dest-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps images from stretching */
+}
+
+.price-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff5a5f;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.dest-content {
+    padding: 20px;
+}
+
+.dest-content h3 {
+    margin: 0 0 8px 0;
+    color: black;
+}
+
+.region {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dest-content p {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+.btn-learn {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-learn:hover {
+    background-color: #e64a4f;
+}
+.dest-hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dest-hero h1 {
+    font-size: 3.5rem;
+    margin: 0 0 20px 0;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dest-hero p {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .dest-hero {
+        padding: 50px 5%;
+    }
+    
+    .dest-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .dest-hero p {
+        font-size: 1rem;
+    }
+}
+
+.dest-filter {
+    text-align: center;
+    padding: 20px 5%;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #667eea;
+}
+
+.dest-filter p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
