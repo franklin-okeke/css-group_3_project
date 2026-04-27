@@ -1,0 +1,205 @@
+/* ABOUT HERO */
+
+.about-hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1527631746610-bca00a040d60')
+center/cover no-repeat;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+color:#fff;
+max-width:700px;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+color:#fff;
+}
+
+.hero-content p{
+font-size:20px;
+color:#fff;
+}
+
+
+
+/* ABOUT STORY */
+
+.about-story{
+padding:90px 10%;
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+background:#ffffff;
+}
+
+.story-image{
+flex:1;
+}
+
+.story-image img{
+width:100%;
+border-radius:18px;
+display:block;
+}
+
+.story-text{
+flex:1;
+padding:20px;
+}
+
+.story-text h2{
+font-size:42px;
+margin-bottom:25px;
+color:#111;
+}
+
+.story-text p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:20px;
+color:#444;
+}
+
+
+
+/* VALUES SECTION */
+
+.about-values{
+padding:90px 10%;
+text-align:center;
+background:#f7f9fc;
+}
+
+.about-values h2{
+font-size:42px;
+margin-bottom:40px;
+color:#111;
+}
+
+.value-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.value-card{
+background:#fff;
+padding:35px;
+border-radius:18px;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
+transition:0.3s;
+}
+
+.value-card:hover{
+transform:translateY(-8px);
+}
+
+.value-card h3{
+margin-bottom:15px;
+font-size:24px;
+color:#111;
+}
+
+.value-card p{
+color:#555;
+line-height:1.6;
+}
+
+
+
+/* TEAM SECTION */
+
+.about-team{
+padding:90px 10%;
+text-align:center;
+background:#fff;
+}
+
+.about-team h2{
+font-size:42px;
+margin-bottom:40px;
+color:#111;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.team-card{
+padding:30px;
+border-radius:18px;
+background:#fff;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.team-card:hover{
+transform:translateY(-8px);
+}
+
+.team-card img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+.team-card h4{
+font-size:22px;
+margin-bottom:10px;
+color:#111;
+}
+
+.team-card p{
+color:#555;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.about-story{
+flex-direction:column;
+text-align:center;
+}
+
+.story-text h2,
+.about-values h2,
+.about-team h2{
+font-size:32px;
+}
+
+}
