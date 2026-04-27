@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    /* min-height: calc(100vh-4rem); */
 }
 
 .hero-img{
@@ -15,6 +14,8 @@
     object-fit: cover;
     min-height: 100vh;
 }
+
+
 .hero-img .overlay{
     position: absolute;
     top: 0;
@@ -32,6 +33,7 @@
     gap: 3rem;
     padding: 0 1.5rem;
 }
+
 .hero-content button{
     padding: .5rem .8rem;
     background-color: orange;
@@ -112,7 +114,12 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    transition: transform 0.3s ease;
 }
+.featured .destination-img .image-1:hover{
+   transform: translateY(-10px);
+}
+
 .featured .destination-img .image-1 span{
     font-size: 2rem;
 }
@@ -157,10 +164,10 @@
 .why-container .hint{
   display: flex;
   align-items: center;
-  gap: .2rem;  
+  gap: 1rem;  
 }
  .why-container .why span{
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: gray;
 }
 .hint .fa-solid.fa-arrow-right{
