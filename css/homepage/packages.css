@@ -1,0 +1,110 @@
+/* Packages Styles */
+.packages-hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    color: white;
+    padding: 80px 5%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.packages-hero h1 {
+    font-size: 3.5rem;
+    margin: 0 0 20px 0;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.packages-hero p {
+    font-size: 1.3rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
+    background-color: #f9f9f9;
+}
+
+.package-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.package-card.featured {
+    border: 2px solid #2563eb; /* Highlight the best seller */
+    transform: scale(1.05);
+}
+
+.package-card h2 {
+    color: #333;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.package-desc {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.package-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2563eb;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.package-price .amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.package-features li {
+    margin-bottom: 12px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.btn-book {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-book:hover {
+    background: #2563eb;
+}
