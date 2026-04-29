@@ -34,73 +34,88 @@
     </header>
     <div class="hamburger"></div>
 
+    <!-- icons to navigate to other pages using icon -->
+    <div class="nav-mobile">
+       <a href="index.html"><i class="fa-solid fa-house"></i></a>
+       <a href="./about.html"><i class="fa-solid fa-user"></i></a>
+       <a href="./destinations.html"><i class="fa-solid fa-location-dot"></i></a>
+       <a href="./packages.html"><i class="fa-solid fa-box"></i></a>
+       <a href="./contact.html"><i class="fa-solid fa-phone"></i></a>
+    </div>
+
+    
     <main>
-        <section class="hero">
-            <h1>Plan Your Journey</h1>
-            <div class="overlay"></div>
-        </section>
+    <section class="hero">
+      <h1>Plan Your Journey</h1>
+      <div class="overlay"></div>
+    </section>
+    <!--Contact Section-->
+    <section class="contact-container">
+      
+      <!--Form -->
+      <div class="form-section">
+        <h2>Book Your Trip</h2>
+        
+        <form>
+          <input type="text" placeholder="Full name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone">
+       <select>
+          <option> Preferred Destination</option>
+          <option>Paris,France</option>
+          <option>Bali,Indonesia</option>
+          <option>Tokyo,Japan</option>
+        </select>
+        <label>Travel Dates</label>
+        <input type="date">
+        <input type="date">
+          
+        <input type="number" placeholder="Number of Travelers">
+          <select>
+          <option>Budget Range</option>
+          <option>$500 - $1000</option>
+          <option>$1000 - $3000</option>
+        </select>
+        <textarea placeholder="Special Requests"></textarea>
+        <button type="submit">Submit</button>
+        </form>
+        </div>
 
-        <!--Contact Section-->
-        <section class="contact-container">
-            <!--Form -->
-            <div class="form-section">
-                <h2>Book Your Trip</h2>
-                
-                <form>
-                    <input type="text" placeholder="Full name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Phone">
-                    <select>
-                        <option> Preferred Destination</option>
-                        <option>Paris,France</option>
-                        <option>Bali,Indonesia</option>
-                        <option>Tokyo,Japan</option>
-                    </select>
-                    
-                    <label>Travel Dates</label>
-                    <input type="date">
-                    <input type="date">    
-                    <input type="number" placeholder="Number of Travelers">
+          <!-- INFO -->
+          <div class="info-section">
+            <h2>Contact Info</h2>
+      <p><i class="fa-solid fa-map-pin"></i> Turing Tech, Enugu</p>
+      <p><i class="fa-solid fa-phone"></i> +234 800 000 0000</p>
+      <p><i class="fa-regular fa-envelope"></i> info@travel.com</p>
+      <p><i class="fa-regular fa-clock"></i> Mon - Fri: 9am - 5pm</p>
 
-                    <select>
-                        <option>Budget Range</option>
-                        <option>$500 - $1000</option>
-                        <option>$1000 - $3000</option>
-                    </select>
-                    
-                    <textarea placeholder="Special Requests"></textarea>
-                    
-                    <button type="submit">Submit</button>
+      
+      
+      <div class="socials">
+        <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+        
+         
 
-                    <!-- INFO -->
-                    <div class="info-section">
-                        <h2>Contact Info</h2>
-                        <p>📍 Turing Tech, Enugu</p>
-                        <p>📞 +234 800 000 0000</p>
-                        <p>📧 info@travel.com</p>
-                        <p>🕒 Mon - Fri: 9am - 5pm</p>
-                        
-                        <div class="socials">
-                            <a href="#">Facebook</a>
-                            <a href="#">Instagram</a>
-                        </div>
-                    </div>
-                    <!--Map-->
-                    <section>
-                        <iframe 
-                        src="https://www.google.com/maps?q=Enugu&output=embed"
-                        width="100%" 
-                        height="300" 
-                        style="border:0;" 
-                        loading="lazy">
-                        </iframe>
-                    </section>
-                </form>
-            </div>
-            
-        </section>
-
-    </main>
+          
+          <!--Map-->
+          
+            <iframe 
+      src="https://www.google.com/maps?q=Enugu&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      loading="lazy">
+    </iframe>
+    </div>
+          </section>
+        
+      
+      
+   
+    
+  </main>
 
     <footer>
         <p>&copy; 2026 developed by group 3. All rights reserved</p>
