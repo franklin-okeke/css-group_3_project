@@ -1,37 +1,19 @@
-
 .hero{
     position: relative;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.hero-img{
-    position: relative;
-}
-
-.hero-img img{
-    width: 100%;
-    object-fit: cover;
-    min-height: 100vh;
-}
-
-
-.hero-img .overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 255, 0.1);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1523225918988-00624e6d8fee?q=80&w=811&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    color: white;
+    height: 100vh;
 }
 
 .hero-content{
-    position: absolute;
-    bottom: 15rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    height: 100vh;
     gap: 3rem;
     padding: 0 1.5rem;
+    overflow: hidden;
 }
 
 .hero-content button{
@@ -44,54 +26,28 @@
     cursor: pointer;
 }
 
-.test-container{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+
+@media (min-width: 1020px){
+    .hero-content{
+      flex-direction: row;
 }
-.test-container .testimonial{
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-}
-.testimonial .test-img{
-    display: flex;
-    gap: -12rem;
 }
 
 .testimonial .test-img img{
-    width: 2rem;
-    height: 2rem;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    border: 2px solid #fff;
     object-fit: cover;
+    margin-left: -10px;
+}
+.testimonial .test-img img:first-child {
+    margin-left: 0;
 }
 
-.test-container .travel-images img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 2rem;
-}
-
-@media (min-width: 768px){
-    .hero-content{
-    position: absolute;
-    bottom: 30rem;
-    justify-content: space-between;
-}
-}
-@media (min-width: 1024px){
-    .hero-content{
-    position: absolute;
-    bottom: 35rem;
-    justify-content: space-between;
-}
-.hero-content{
-    flex-direction: row;
-}
-.test-container .travel-images{
+.testimonial .test-img{
     display: flex;
-    gap: 2rem;
-}
+    gap: -4px;
 }
 
 /* featured destination design */
